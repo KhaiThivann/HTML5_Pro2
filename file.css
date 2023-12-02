@@ -1,0 +1,38 @@
+body {
+  margin: 0;
+  font-family: Arial, Helvetica, sans-serif;
+}
+header {
+  height: 80px;
+  width: auto;
+  padding: 0px 70px;
+}
+header img {
+  height: 85px;
+  margin: 15px;
+}
+.nav {
+  overflow: hidden;
+  /* width: 450px; */
+  float: right;
+}
+nav a {
+  height: 80px;
+  width: 80px;
+  float: left;
+  color: black;
+  text-align: center;
+  padding-top: 10px;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+.nav a:hover {
+  background-color: #ddd;
+  color: black;
+}
+
+.nav a.active {
+  background-color: #04aa6d;
+  color: white;
+}
