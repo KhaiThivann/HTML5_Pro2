@@ -1,0 +1,910 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="https://www.sr.ais.edu.kh/FrontEnd/Image/Ais Logo/favicon.ico">
+    <title>AIS Siem Reap Campus</title>
+
+    <!-- Bootstrap 5 cdn -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+
+    <!-- Google Font: Kantumruy Pro, Fresca -->
+    <link href="https://fonts.googleapis.com/css2?family=Fresca&family=Kantumruy+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap" rel="stylesheet">
+    <!-- Font Awesome Icones -->
+    
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/6cee2a7f00.js" crossorigin="anonymous"></script>
+
+    <!-- Owl Carousel -->
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/owl carousel/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/owl carousel/owl.theme.default.css">
+    <!-- Megmific Popup -->
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/magnific-popup/magnific-popup.css">
+    <!-- Animation -->
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/animate/animate-3.7.2.css">
+    <!-- Custom Style -->
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/style.css">
+    <link rel="stylesheet" href="https://www.sr.ais.edu.kh/FrontEnd/Css/responsive.css">
+    
+
+</head>
+
+<body>
+
+    <style>
+    #formSearch {
+        display: none;
+    }
+</style>
+<div class="top-nav bg-white">
+    <!-- 01 -->
+    <div class="first-topnav container-fluid bg-color-dark-purple">
+        <div class="container-xl">
+            <div class="row" style="width: 100%">
+                <ul class="nav" style="width: 15%; text-align: left;">
+                    <li><a class='nav-link'><i class='fa fa-phone' style='font-size:15px'></i> 855 17 889 906</a></li>                </ul>
+
+                <ul class='nav' style='padding: 3px 0;width:85%;text-align: right;justify-content: end;'><li class='nav-item'> <a class='nav-link  ' target='_blank' href='https://registration.ais.edu.kh/en'> ទម្រង់ចុះឈ្មោះតាមប្រព័ន្ធអេឡិចត្រូនិក</a></li><li class='nav-item'> <a class='nav-link  ' href='https://www.sr.ais.edu.kh/teacher' > គ្រូបង្រៀន</a></li><li class='nav-item'> <a class='nav-link  ' href='https://www.sr.ais.edu.kh/student-council' > ក្រុមប្រឹក្សាសិស្ស</a></li><li class='nav-item'> <a class='nav-link  ' href='https://www.sr.ais.edu.kh/tuition-feess' > តម្លៃសិក្សា</a></li><li class='nav-item'> <a class='nav-link  ' href='https://www.sr.ais.edu.kh/contact' > ទំនាក់ទំនង</a></li><li class='nav-item'> <a class='nav-link  ' target='_blank' href='https://mjqjobs.com/'> ឱកាសការងារ</a></li><li class='nav-item'> <a class='nav-link' href='https://www.sr.ais.edu.kh/en'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <img src='https://sr.ais.edu.kh/FrontEnd/Image/flag_english.png' alt='flag_english.png' width='20'>អង់គ្លេស</a></li><li class='nav-item'> <a class='nav-link' href='https://www.sr.ais.edu.kh'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <img src='https://sr.ais.edu.kh/FrontEnd/Image/flag_khmer.png' alt='flag_khmer.png' width='20'> ខ្មែរ</a></li>                <ul>
+                    <li style="list-style: none;">
+                        <form class="d-flex ms-auto" style="width: 220px; height: 40px;"
+                            action="https://www.sr.ais.edu.kh/search" method="GET">
+                            
+                            <div class="input-group testing" style="border: 1px solid #ccc; border-radius: 6px;">
+                                <input class="form-control border-0 mr-2" name="search" type="text" id="search"
+                                    placeholder="Search" style="background-color: transparent">
+                                <button class="btn btn-light border-0" type="submit">
+                                    <i class="fa-solid fa-magnifying-glass"></i>
+                                </button>
+                            </div>
+                        </form>
+                    </li>
+                </ul>
+            </div>
+
+
+        </div>
+    </div>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light shadow p-0 forMobile">
+        <div class="container-xl bg-color-dark-purple changeBG" style="border-radius: 4px 4px 0 0;">
+            <a class="navbar-brand" href="https://www.sr.ais.edu.kh">
+                <img src="https://www.sr.ais.edu.kh/FrontEnd/Image/Ais Logo/AIS Logo_Final-21.png" alt="AIS Logo_Final-21.png"
+                    style="height: 50px;">
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- <div class="offcanvas offcanvas-start overflow-scroll" id="navbarSupportedContent"> -->
+            <!-- collapse navbar-collapse -->
+            <div id="navbarSupportedContent" class="collapse navbar-collapse">
+
+                <ul class="navbar-nav mx-auto mb-2 mb-lg-0 w-100 mobile-menu">
+
+                    <a class="largScreen" href="https://www.sr.ais.edu.kh">
+                        <img src="https://www.sr.ais.edu.kh/FrontEnd/Image/Ais Logo/AIS Logo_Final-20.png"
+                            alt="AIS Logo_Final-21.png" style="width: 80%; padding: 2%;">
+                    </a>
+                    <div class="offcanvas-header">
+                        <a href="https://www.sr.ais.edu.kh">
+                            <img src="https://www.sr.ais.edu.kh/FrontEnd/Image/Ais Logo/AIS Logo_Final-20.png"
+                                alt="AIS Logo_Final-21.png" style="width: 80%; padding: 2%;">
+                        </a>
+                        <button type="button" class="btn-close p-3" data-bs-dismiss="offcanvas"></button>
+                    </div>
+
+                    <ul class='navbar-nav mx-auto mb-2 mb-lg-0 w-100 mobile-menu'><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/about-us' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> អំពីយើង</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/about-american-intercon-school-siem-reap-campus-welcome' > អំពីសាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាសៀមរាប សូមស្វាគមន៍</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/about-american-intercon-school' > អំពីសាលារៀន អន្តរទ្វីប អាមេរិកាំង</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/vision-and-mission' > ទស្សនវិស័យ និងបេសកកម្ម</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/equipment' > បរិក្ខារ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/mengly-j--quach-library' > បណ្ណាល័យ ម៉េងលី ជេ.គួច</a></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/others-services' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> សេវាកម្មផ្សេងទៀត</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/student-locker' > ទូរដាក់សម្ភារសិស្ស</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/intercon-transportation-services' > សេវាកម្មដឹកជញ្ជូនសិស្ស អន្តរទ្វីប</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/success-history' > ប្រវត្តិជោគជ័យ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/certificates-and-awards' > បណ្ណសរសើរ និងពានរង្វាន់</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-s-news' > ព័ត៌មានសាលា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-events' > ព្រឹត្តការណ៍សាលា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-calendar' > ប្រតិទិនសាលា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/year-book' > សៀវភៅកម្រងប្រចាំឆ្នាំសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/magazine' > ទស្សនាវដ្តី</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-structure' > រចនាសម្ព័ន្ធរបស់សាលា</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/founder--chairman-and-ceo' > ស្ថាបនិក ប្រធាន និងនាយកប្រតិបត្តិ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-committee' > គណៈកម្មការសាលា</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/school' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> សាលា</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/preschool-and-kindergarten-school' > ក្រោមមត្តេយ្យ-មត្ដេយ្យសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/elementary-school' > បឋមសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/junior-high-school' > អនុវិទ្យាល័យ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/high-school' > វិទ្យាល័យ</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/add-ons' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> កម្មវិធីបន្ថែម</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/english​​-add-on' > អង់គ្លេស</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/skill' > ជំនាញ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/bridging-program' > កម្មវិធីចម្លងវេនសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/sports' > កីឡា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/preparatory-program-for-the-new-school-year' > កម្មវិធីរៀនត្រៀមសម្រាប់ឆ្នាំសិក្សាថ្មី</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/summer-program' > កម្មវិធីសិក្សាពេលវិស្សមកាល</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/staff' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> បុគ្គលិក</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/preschool-and-kindergarten-teachers' > គ្រូក្រោមមត្តេយ្យ និងមត្តេយ្យសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/elementary-teachers' > គ្រូបឋមសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/junior-school-teachers' > គ្រូអនុវិទ្យាល័យ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/high-school-teacher' > គ្រូវិទ្យាល័យ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/english-teacher' > គ្រូភាសាអង់គ្លេស</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/skill-teachers' > គ្រូមុខវិជ្ជាជំនាញ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-counselor' > អ្នកប្រឹក្សាសាលា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/ais-administration-officer' > ផ្នែករដ្ឋបាល</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/study-life' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> ដំណើរជីវិតក្នុងការសិក្សា</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/learning-activities' > សកម្មភាពសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/arts-and-other-activities' > សិល្បៈ និងសកម្មភាពផ្សេងៗ</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/life-skills' > បំណិនជីវិត</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/internship-and-study-visit' > ដំណើរចុះកម្មសិក្សា និងទស្សនកិច្ចសិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/knowledge-competition' > ការប្រកួតប្រជែងចំណេះដឹង</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/charity-and-community-work' > កម្មវិធីសប្បុរសធម៌</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item dropdown-toggle ' href='https://www.sr.ais.edu.kh/enrollment' id='navbarDropdown' role='button' data-bs-toggle='dropdown' data-bs-auto-close='outside'> ការចុះឈ្មោះចូលរៀន</a><ul class='submenu deeper dropend dropdown-menu drop-fade-up border-0 shadow' aria-labelledby='navbarDropdown'><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/documents-for-enrollment' > ឯកសារសម្រាប់ការចុះឈ្មោះចូលរៀន</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/admission-process-for-current-students' > ការចុះឈ្មោះចូលរៀនសម្រាប់សិស្សចាស់</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/registration-process-for-new-students' > ដំណើរការចុះឈ្មោះចូលរៀនសម្រាប់សិស្សថ្មី</a></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/tuition-fees' > តម្លៃសិក្សា</a></li></ul></li><li class='nav-item dropdown'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/school-news' > ព័ត៌មានសាលា</a></li></ul>
+                    <ul class='navbar-nav mx-auto mb-2 mb-lg-0 w-100 mobile-menu displayNone'><li class='nav-item'> <a class='dropdown-item  ' target='_blank' href='https://registration.ais.edu.kh/en'> ទម្រង់ចុះឈ្មោះតាមប្រព័ន្ធអេឡិចត្រូនិក</a></li><li class='nav-item'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/teacher' > គ្រូបង្រៀន</a></li><li class='nav-item'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/student-council' > ក្រុមប្រឹក្សាសិស្ស</a></li><li class='nav-item'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/tuition-feess' > តម្លៃសិក្សា</a></li><li class='nav-item'> <a class='dropdown-item  ' href='https://www.sr.ais.edu.kh/contact' > ទំនាក់ទំនង</a></li><li class='nav-item'> <a class='dropdown-item  ' target='_blank' href='https://mjqjobs.com/'> ឱកាសការងារ</a></li><li class='nav-item'> <a class='dropdown-item' href='https://www.sr.ais.edu.kh/en'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img src='https://sr.ais.edu.kh/FrontEnd/Image/flag_english.png' width='20'>អង់គ្លេស</a></li><li class='nav-item'> <a class='dropdown-item' href='https://www.sr.ais.edu.kh'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img src='https://sr.ais.edu.kh/FrontEnd/Image/flag_khmer.png' width='20'> ខ្មែរ</a></li></ul>
+                </ul>
+            </div>
+        </div>
+    </nav>
+</div>
+
+<script type="text/javascript">
+    var divHide = document.getElementById("formSearch");
+
+    function handleToggle() {
+        divHide.style.display === "none" ? divHide.style.display = "flex" : divHide.style.display = "none";
+    }
+</script>
+
+    <div class="content-space"></div>
+
+    
+            <style>
+        .news .item {
+            display: none;
+        }
+    </style>
+    <!-- Carousel -->
+    <section class="home">
+        <div id="homeCarousel" class="carousel slide carousel-fade" data-bs-ride="carousel">
+            <div class="carousel-indicators">
+                                    <button type='button' data-bs-target='#homeCarousel' data-bs-slide-to='0'
+                        class='active' aria-current='true' aria-label='Slide 1'>
+                        <div class='overlay-image' style='background-image: url("http://sr.ais.edu.kh/storage/photos/pop up/20230706_01-02-01.jpg")'></div>
+                    </button>
+                                    <button type='button' data-bs-target='#homeCarousel' data-bs-slide-to='1'
+                        class='' aria-current='true' aria-label='Slide 2'>
+                        <div class='overlay-image' style='background-image: url("https://sr.ais.edu.kh/storage/photos/20191025-ais-gallery-group.jpg")'></div>
+                    </button>
+                                    <button type='button' data-bs-target='#homeCarousel' data-bs-slide-to='2'
+                        class='' aria-current='true' aria-label='Slide 3'>
+                        <div class='overlay-image' style='background-image: url("http://sr.ais.edu.kh/storage/photos/pop up/20230706_01-01.jpg")'></div>
+                    </button>
+                                    <button type='button' data-bs-target='#homeCarousel' data-bs-slide-to='3'
+                        class='' aria-current='true' aria-label='Slide 4'>
+                        <div class='overlay-image' style='background-image: url("https://sr.ais.edu.kh/storage/photos/REV.11 C3-min.png")'></div>
+                    </button>
+                            </div>
+            <div class="carousel-inner">
+                                    <div class='carousel-item active'
+                        style='background-image: url("http://sr.ais.edu.kh/storage/photos/pop up/20230706_01-02-01.jpg")'>
+                        <div class='container carousel-content-text text-white my-2 py-5 wow animated fadeIn'
+                            data-wow-duration='1s' data-wow-delay='0.7s'>
+                            <h4>សូមស្វាគមន៍មកកាន់ សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាខេត្តសៀមរាប</h4>
+                            <p>សិស្សានុសិស្សសិក្សាជាមួយនឹងលោកគ្រូ អ្នកគ្រូពោរពេញទៅដោយគរុកោសល្យ និងសមត្ថភាពខ្ពស់ បុគ្គលិកសិក្សារួសរាយរាក់ទាក់ និងផ្តល់នូវទំនុកចិត្តយ៉ាងកក់ក្តៅជូនដល់សិស្សានុសិស្ស មាតាបិតា និងអ្នកអាណាព្យាល។ យើងខ្ញុំលះបង់ពេលវេលា និងកម្លាំងកាយចិត្តរបស់យើងខ្ញុំ ដើម្បីបណ្តុះបណ្តាលកូនៗរបស់លោកអ្នកឱ្យក្លាយជាអ្នកដឹកនាំពេលអនាគត។ជាសាលាមួយដែលមាន គុណភាព វិន័យ និងសេវាកម្ម ដែលល្អបំផុតក្នុងប្រទេសកម្ពុជា មានបរិយាកាសល្អប្រសើរបំផុត ដែលជួយជំរុញឱ្យសិស្សានុសិស្សខំប្រឹងប្រែងរៀនសូត្របន្ថែមទៀត!</p>
+                        </div>
+                    </div>
+                                    <div class='carousel-item '
+                        style='background-image: url("https://sr.ais.edu.kh/storage/photos/20191025-ais-gallery-group.jpg")'>
+                        <div class='container carousel-content-text text-white my-2 py-5 wow animated fadeIn'
+                            data-wow-duration='1s' data-wow-delay='0.7s'>
+                            <h4>សូមស្វាគមន៍មកកាន់ សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាខេត្តសៀមរាប</h4>
+                            <p>សិស្សានុសិស្សសិក្សាជាមួយនឹងលោកគ្រូ អ្នកគ្រូពោរពេញទៅដោយគរុកោសល្យ និងសមត្ថភាពខ្ពស់ បុគ្គលិកសិក្សារួសរាយរាក់ទាក់ និងផ្តល់នូវទំនុកចិត្តយ៉ាងកក់ក្តៅជូនដល់សិស្សានុសិស្ស មាតាបិតា និងអ្នកអាណាព្យាល។ យើងខ្ញុំលះបង់ពេលវេលា និងកម្លាំងកាយចិត្តរបស់យើងខ្ញុំ ដើម្បីបណ្តុះបណ្តាលកូនៗរបស់លោកអ្នកឱ្យក្លាយជាអ្នកដឹកនាំពេលអនាគត។ជាសាលាមួយដែលមាន គុណភាព វិន័យ និងសេវាកម្ម ដែលល្អបំផុតក្នុងប្រទេសកម្ពុជា មានបរិយាកាសល្អប្រសើរបំផុត ដែលជួយជំរុញឱ្យសិស្សានុសិស្សខំប្រឹងប្រែងរៀនសូត្របន្ថែមទៀត!</p>
+                        </div>
+                    </div>
+                                    <div class='carousel-item '
+                        style='background-image: url("http://sr.ais.edu.kh/storage/photos/pop up/20230706_01-01.jpg")'>
+                        <div class='container carousel-content-text text-white my-2 py-5 wow animated fadeIn'
+                            data-wow-duration='1s' data-wow-delay='0.7s'>
+                            <h4>សូមស្វាគមន៍មកកាន់ សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាខេត្តសៀមរាប</h4>
+                            <p>សិស្សានុសិស្សសិក្សាជាមួយនឹងលោកគ្រូ អ្នកគ្រូពោរពេញទៅដោយគរុកោសល្យ និងសមត្ថភាពខ្ពស់ បុគ្គលិកសិក្សារួសរាយរាក់ទាក់ និងផ្តល់នូវទំនុកចិត្តយ៉ាងកក់ក្តៅជូនដល់សិស្សានុសិស្ស មាតាបិតា និងអ្នកអាណាព្យាល។ យើងខ្ញុំលះបង់ពេលវេលា និងកម្លាំងកាយចិត្តរបស់យើងខ្ញុំ ដើម្បីបណ្តុះបណ្តាលកូនៗរបស់លោកអ្នកឱ្យក្លាយជាអ្នកដឹកនាំពេលអនាគត។ជាសាលាមួយដែលមាន គុណភាព វិន័យ និងសេវាកម្ម ដែលល្អបំផុតក្នុងប្រទេសកម្ពុជា មានបរិយាកាសល្អប្រសើរបំផុត ដែលជួយជំរុញឱ្យសិស្សានុសិស្សខំប្រឹងប្រែងរៀនសូត្របន្ថែមទៀត!</p>
+                        </div>
+                    </div>
+                                    <div class='carousel-item '
+                        style='background-image: url("https://sr.ais.edu.kh/storage/photos/REV.11 C3-min.png")'>
+                        <div class='container carousel-content-text text-white my-2 py-5 wow animated fadeIn'
+                            data-wow-duration='1s' data-wow-delay='0.7s'>
+                            <h4>សូមស្វាគមន៍មកកាន់ សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាខេត្តសៀមរាប</h4>
+                            <p>សិស្សានុសិស្សសិក្សាជាមួយនឹងលោកគ្រូ អ្នកគ្រូពោរពេញទៅដោយគរុកោសល្យ និងសមត្ថភាពខ្ពស់ បុគ្គលិកសិក្សារួសរាយរាក់ទាក់ និងផ្តល់នូវទំនុកចិត្តយ៉ាងកក់ក្តៅជូនដល់សិស្សានុសិស្ស មាតាបិតា និងអ្នកអាណាព្យាល។ យើងខ្ញុំលះបង់ពេលវេលា និងកម្លាំងកាយចិត្តរបស់យើងខ្ញុំ ដើម្បីបណ្តុះបណ្តាលកូនៗរបស់លោកអ្នកឱ្យក្លាយជាអ្នកដឹកនាំពេលអនាគត។ជាសាលាមួយដែលមាន គុណភាព វិន័យ និងសេវាកម្ម ដែលល្អបំផុតក្នុងប្រទេសកម្ពុជា មានបរិយាកាសល្អប្រសើរបំផុត ដែលជួយជំរុញឱ្យសិស្សានុសិស្សខំប្រឹងប្រែងរៀនសូត្របន្ថែមទៀត!</p>
+                        </div>
+                    </div>
+                            </div>
+            <button class="carousel-control-prev mx-5" type="button" data-bs-target="#homeCarousel" data-bs-slide="prev">
+                <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-chevron-left"></i>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next mx-5" type="button" data-bs-target="#homeCarousel" data-bs-slide="next">
+                <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                <i class="fa-solid fa-chevron-right"></i>
+                <span class="visually-hidden">Next</span>
+            </button>
+        </div>
+    </section>
+    <br>
+
+    <!-- Feature -->
+    <section class="feature">
+        <div class="container-xl mt-5">
+            <div class="row justify-content-center">
+                <div class="col-lg-9 col-md-7 col-sm-5 col-xs-4 text-center eventTitle">
+                    <a class="linkCard text-center"
+                        href="school-news">
+                        <h4 class=" text-center fw-bold color-dark-purple">
+                            ព្រឹត្តិការណ៍សាលា</h4>
+                    </a>
+                    <!-- <h4 class="text-center fw-bold mb-5 color-dark-purple"> </h4> -->
+                </div>
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="owl-carousel-feature">
+                                            <a class="linkCard"
+                            href="articles/អបអរសាទរ-ខួបលើកទី៨-នៃការដាក់បញ្ចូលល្បែងទាញព្រ័ត្រ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="https://sr.ais.edu.kh/storage/photos/Even Nov/20231202_Poster_Tugging Rituals and Game-2023 from AIS.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        អបអរសាទរ ខួបលើកទី៨ នៃការដាក់បញ្ចូលល្បែងទាញព្រ័ត្រ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/តើ-ai-ជាអ្វី?-ហើយវាបានចូលរួមចំណែកអ្វីខ្លះ-ដល់វិស័យបច្ចេកវិទ្យាសព្វថ្ងៃនេះ?">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/photo_2023-11-30_14-37-16.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        តើ AI ជាអ្វី? ហើយវាបានចូលរួមចំណែកអ្វីខ្លះ ដល់វិស័យបច្ចេកវិទ្យាសព្វថ្ងៃនេះ?
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/អបអរសាទរខួបលើកទី៧-នៃការដាក់បញ្ចូលចាប៉ីដងវែងក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌អរូបីនៃមនុស្សជាតិ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/ចាបីុដងវែង-02.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        អបអរសាទរខួបលើកទី៧ នៃការដាក់បញ្ចូលចាប៉ីដងវែងក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌អរូបីនៃមនុស្សជាតិ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/អត្ថប្រយោជន៍របស់ផ្លែកន្ទួតព្រៃ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/photo_2023-11-29_06-52-54.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        អត្ថប្រយោជន៍របស់ផ្លែកន្ទួតព្រៃ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/តំបន់ទេសចរណ៍ចំនួន៥នៅខេត្តកែប-កំពុងទាក់ទាញភ្ញៀវទេសចរ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/photo_2023-11-29_06-56-38.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        តំបន់ទេសចរណ៍ចំនួន៥នៅខេត្តកែប កំពុងទាក់ទាញភ្ញៀវទេសចរ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/ព្រះរាជពិធីបុណ្យអុំទូក-បណ្ដែតប្រទីប-និងសំពះព្រះខែ-អកអំបុក">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/20231126_Poster_Water Festival_2023-From AIS.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        ព្រះរាជពិធីបុណ្យអុំទូក បណ្ដែតប្រទីប និងសំពះព្រះខែ អកអំបុក
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/អបអរសាទរខួបលើកទី៥-នៃការដាក់បញ្ចូលល្ខោនខោលក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌នៃមនុស្សជាតិ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/20231128_Poster lakhon khol.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        អបអរសាទរខួបលើកទី៥ នៃការដាក់បញ្ចូលល្ខោនខោលក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌នៃមនុស្សជាតិ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/អបអរសាទរល្ខោនស្រមោលស្បែកធំចូលក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌នៃមនុស្សជាតិ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/20231125_Poster_Sbek Thom The 18th Anniversary-2023 From AIS.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        អបអរសាទរល្ខោនស្រមោលស្បែកធំចូលក្នុងបញ្ជីបេតិកភណ្ឌវប្បធម៌នៃមនុស្សជាតិ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/🎉-ais-ធ្វើឱ្យក្តីស្រមៃកូនលោកអ្នកក្លាយជាការពិត-">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/Capture.PNG" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        🎉 AIS ធ្វើឱ្យក្តីស្រមៃកូនលោកអ្នកក្លាយជាការពិត!
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                                            <a class="linkCard"
+                            href="articles/លិខិតជូនពរ">
+                            <div class="row cardUnderslide">
+                                <div class="col-md-6 col-sm-12" style="padding:0">
+                                    <img src="http://sr.ais.edu.kh/storage/photos/Even Nov/20231124_Poster_Water_Festival_Wish_to_Mr_Chairman_from_AIS.jpg" class='img-main' alt='academics01'>
+                                </div>
+                                <div class="col-md-6 col-sm-12">
+                                    <p class="color-dark-purple">
+                                        លិខិតជូនពរ
+                                    </p>
+                                </div>
+                            </div>
+                        </a>
+                    
+                </div>
+            </div>
+        </div>
+    </section><br>
+
+    <section>
+        <div class="container-xl my-5  text-center newsHomePage">
+            <h4 class="fw-bold mb-5 color-dark-purple">
+                ការប្តេជ្ញាចិត្តរបស់យើង
+            </h4>
+            <p>សាលារៀន អន្តរទ្វីប អាមេរិកាំង របស់យើងប្តេជ្ញាយ៉ាងមោះមុតក្នុងការសហការជាមួយក្រសួង ឬមន្ទីរអប់រំយុវជន និងកីឡា អាជ្ញាធរ ស្ថាប័នជាតិ និងអន្តរជាតិដែលពាក់ព័ន្ធនានា ព្រមទាំងអ្នកអាណាព្យាបាល និងអតីតសិស្សទាំងអស់ ដើម្បីធ្វើយ៉ាងណាឱ្យគុណភាពអប់រំរបស់សាលារៀនយើងនាំមុខគេជានិច្ចនៅក្នុងប្រទេសកម្ពុជា។</p>        </div>
+    </section>
+
+    <section class="event-new feature">
+        <div class="container-xl">
+            <div class="row justify-content-center wow animated fadeInDown" data-wow-duration="1s" data-wow-delay="0.5s">
+                <!-- <div class="col-lg-8 col-md-10 col-sm-12 text-center"> -->
+                <h4 class="text-center fw-bold mb-5 color-dark-purple">
+                    លក្ខណៈពិសេស </h4>
+                <!-- </div> -->
+            </div>
+            <div class="row">
+                <div class="owl-carousel owl-theme" id="owl-carousel-feature">
+                                            <div class='stylepadding item mb-3 w-100'>
+                            <div class='card h-100'>
+                                <div class='card-header article__card p-0'>
+                                    <img class='card-img img-overlay' src="http://sr.ais.edu.kh/storage/photos/Other/IMG_2970.jpg">
+                                </div>
+                                <div class='card-body'>
+                                    <p class='date'>
+                                        <i class='fa-solid fa-clock'></i>
+                                        <span
+                                            class='text-capitalize'>Oct 25, 2022</span>
+                                    </p>
+                                    <h4>កម្មវិធីសប្បុរសធម៌</h4>
+                                    <a class='btn btn-dark-purple'
+                                        href="articles/charity-and-community-work">
+                                        អានបន្ត</a>
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div class='stylepadding item mb-3 w-100'>
+                            <div class='card h-100'>
+                                <div class='card-header article__card p-0'>
+                                    <img class='card-img img-overlay' src="https://sr.ais.edu.kh/storage/photos/AllRoom/QI5A7195.JPG.jpg">
+                                </div>
+                                <div class='card-body'>
+                                    <p class='date'>
+                                        <i class='fa-solid fa-clock'></i>
+                                        <span
+                                            class='text-capitalize'>Oct 24, 2022</span>
+                                    </p>
+                                    <h4>បណ្ណាល័យ ម៉េងលី ជេ. គួច</h4>
+                                    <a class='btn btn-dark-purple'
+                                        href="articles/the-mengly-j.-quach-library">
+                                        អានបន្ត</a>
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div class='stylepadding item mb-3 w-100'>
+                            <div class='card h-100'>
+                                <div class='card-header article__card p-0'>
+                                    <img class='card-img img-overlay' src="http://sr.ais.edu.kh/storage/photos/AllRoom/IMG_0636_ok.jpg">
+                                </div>
+                                <div class='card-body'>
+                                    <p class='date'>
+                                        <i class='fa-solid fa-clock'></i>
+                                        <span
+                                            class='text-capitalize'>Oct 24, 2022</span>
+                                    </p>
+                                    <h4>ទស្សនវិស័យ និងបេសកកម្ម</h4>
+                                    <a class='btn btn-dark-purple'
+                                        href="articles/vision-and-mission">
+                                        អានបន្ត</a>
+                                </div>
+
+                            </div>
+                        </div>
+                                            <div class='stylepadding item mb-3 w-100'>
+                            <div class='card h-100'>
+                                <div class='card-header article__card p-0'>
+                                    <img class='card-img img-overlay' src="http://sr.ais.edu.kh/storage/photos/AllRoom/QI5A7072.JPG.jpg">
+                                </div>
+                                <div class='card-body'>
+                                    <p class='date'>
+                                        <i class='fa-solid fa-clock'></i>
+                                        <span
+                                            class='text-capitalize'>Oct 14, 2022</span>
+                                    </p>
+                                    <h4>បរិក្ខារ</h4>
+                                    <a class='btn btn-dark-purple'
+                                        href="articles/equipment">
+                                        អានបន្ត</a>
+                                </div>
+
+                            </div>
+                        </div>
+                                    </div>
+            </div>
+        </div>
+    </section><br>
+
+
+
+    <!-- School -->
+    <section class="school">
+        <div class="container-xl">
+            <h4 class="text-center fw-bold my-5 color-dark-purple"> សាលារៀន
+            </h4>
+
+            <div class="row cardSchool">
+                                    <div class="col-md-3 col-sm-12 card">
+                        <center>
+                            <div style="width:200px; height:200px">
+                                <img src="http://sr.ais.edu.kh/storage/photos/AllRoom/IMG_2275.jpg" class="img-fluid rounded-2" alt="photo">
+                            </div> <br><br>
+                            <h4 class="color-dark-purple">
+                                ក្រោមមត្តេយ្យ-មត្ដេយ្យសិក្សា
+                            </h4>
+                            <p>កុមារមានការអភិវឌ្ឍយ៉ាងឆាប់រហ័សទៅលើកាយសម្បទា សតិបញ្ញា ស្មារតីការគិត សីលធម៌ និងភាសាទៅតាមបរិយាកាស និងទំនោរនៃ មជ្ឈដ្ឋានសង្គម។ សាលារៀន អន្តរទ្វីប អាមេរិកាំង មានជំនាញយ៉ាងពិសេសក្នុងការបណ្តុះបណ្តាលកុមារតូចៗ ឱ្យស្របនឹងការលូតលាស់យ៉ាងរហ័សរបស់ពួកគាត់ ជាមួយនឹងលក្ខណៈពិសេសយ៉ាងសម្បូរបែបដូចខាងក្រោម
+                            </p>
+                            <a class="btn btn-dark-purple"
+                                href="https://www.sr.ais.edu.kh/articles/preschool-and-kindergarten-school"
+                                class="btn btn-dark-purple">អានបន្ត</a>
+                        </center>
+                    </div>
+                                    <div class="col-md-3 col-sm-12 card">
+                        <center>
+                            <div style="width:200px; height:200px">
+                                <img src="http://sr.ais.edu.kh/storage/photos/AllRoom/IMG_0497.JPG.jpg" class="img-fluid rounded-2" alt="photo">
+                            </div> <br><br>
+                            <h4 class="color-dark-purple">
+                                បឋមសិក្សា
+                            </h4>
+                            <p>សាលារៀន អន្តរទ្វីប អាមេរិកាំង មានកម្មវិធីសិក្សាច្បាស់លាស់ គ្រប់កម្រិតសិក្សាតាមបែបខ្មែរ-អាមេរិកាំង ដំបូងគេបង្អស់នៅក្នុងព្រះរាជាណាចក្រកម្ពុជា។
+ផ្តោតទៅលើការបញ្ជ្រាបនូវចំណេះដឹងមូលដ្ឋានគ្រឹះជាចម្បង និងរួមបញ្ចូលទាំងកម្មវិធីសិក្សាកុមារមេត្រី។
+លោកគ្រូ អ្នកគ្រូ មានវិធីសាស្រ្តបង្រៀនល្អៗ បទពិសោធន៍ និងឆន្ទៈមនសិការវិជ្ជាជីវៈខ្ពស់ មានឯកសារស្រាវជ្រាវសម្បូរបែប ព្រមទាំងមានមុខវិជ្ជាជំនាញច្បាស់លាស់ក្នុងការបង្រៀនបំណិនជីវិត។
+                            </p>
+                            <a class="btn btn-dark-purple"
+                                href="https://www.sr.ais.edu.kh/articles/elementary-school"
+                                class="btn btn-dark-purple">អានបន្ត</a>
+                        </center>
+                    </div>
+                                    <div class="col-md-3 col-sm-12 card">
+                        <center>
+                            <div style="width:200px; height:200px">
+                                <img src="https://sr.ais.edu.kh/storage/photos/slide03.jpg" class="img-fluid rounded-2" alt="photo">
+                            </div> <br><br>
+                            <h4 class="color-dark-purple">
+                                អនុវិទ្យាល័យ
+                            </h4>
+                            <p>ការលូតលាស់​របស់​ប្អូន​ៗថ្នាក់​អនុវិទ្យាល័យ​ គឺជា​ដំណាក់កាល​មួយ​សំខាន់​សម្រាប់​ត្រៀម​ឱ្យ​ប្អូន​ឈាន​ទៅ​យុវវ័យ​ប្រកបដោយ​ចំណេះ​ជំនាញ​ និង​ក្រមសីលធម៌​ល្អ​ក្នុង​ការរស់នៅ​ក្នុង​សង្គម​ដោយ​ភាពត្រជាក់​ត្រជំ
+ដើម្បី​អភិ​វឌ្ឍ​ប្អូន​ៗក្នុង​យុវភាព​នេះ​ សាលា​មាន​យុទ្ធវិធី​ និង​សិល្បៈ​នៃ​ការអប់រំ​។
+                            </p>
+                            <a class="btn btn-dark-purple"
+                                href="https://www.sr.ais.edu.kh/articles/junior-high-school"
+                                class="btn btn-dark-purple">អានបន្ត</a>
+                        </center>
+                    </div>
+                                    <div class="col-md-3 col-sm-12 card">
+                        <center>
+                            <div style="width:200px; height:200px">
+                                <img src="https://sr.ais.edu.kh/storage/photos/QI5A0023-min.jpg" class="img-fluid rounded-2" alt="photo">
+                            </div> <br><br>
+                            <h4 class="color-dark-purple">
+                                វិទ្យាល័យ
+                            </h4>
+                            <p>សាលារៀន​ អន្តរទ្វីប​ អាមេរិកាំង​ បាន​យកចិត្ត​ទុកដាក់​បំពេញ​នូវ​បេសកកម្ម​អប់រំ​ មួយ​ឈរ​លើ​មាគ៌ា​ដ៏​ត្រឹមត្រូវ​ តាមកម្ម​វិធី​សិក្សា​សម្បូរ​បែប​ និង​ច្បាស់លាស់​បែប​ ខ្មែរ​-អាមេរិកាំង​ ស្របតាម​កម្មវិធី​សិក្សា​របស់ក្រ​សួង​អប់រំ​ យុវជន​ និងកីឡា​ ប្រកបដោយ​គុណភាព​ វិន័យ​ និង​សេវាកម្ម​។ ការ​ត្រៀម​សម្រាប់​សិស្សានុសិស្ស​ ថ្នាក់​វិទ្យាល័យ​ ដើម្បី​ឱ្យ​ចាប់​យក​នូវ​មហាវិទ្យាល័យ​ប្រកបដោយ​ភាព​ជោគជ័យ​ សាលា​ មាន​វិធី​សាស្រ្ត​ជាច្រើន
+                            </p>
+                            <a class="btn btn-dark-purple"
+                                href="https://www.sr.ais.edu.kh/articles/high-school"
+                                class="btn btn-dark-purple">អានបន្ត</a>
+                        </center>
+                    </div>
+                            </div>
+        </div><br><br> <br><br>
+
+    </section>
+    <section class="play-video">
+        <div class="bg-overlay bg-parallax py-5">
+            <h4 class="text-center fw-bold pb-5 wow animated fadeIn color-dark-purple" data-wow-duration="1s"
+                data-wow-delay="0.5s">
+                បរិស្ថានល្អបំផុត
+            </h4>
+            <div class="">
+                <div id="homeCarouselVideo" class="carousel slide carousel-fade" data-bs-ride="carousel">
+                    <div class="carousel-indicators">
+                                                    <button type='button' data-bs-target='#homeCarouselVideo'
+                                data-bs-slide-to='0' class='active'
+                                aria-current='true' aria-label='Slide 1' style="opacity: 0">
+                                <div class='overlay-image' style='background-image: url("")'>
+                                </div>
+                            </button>
+                                            </div>
+                    <div class="carousel-inner">
+                                                    <div class='carousel-item active'>
+                                <div class="container-xl">
+                                    <div class="row">
+                                        <div class="col-xl-6 col-md-6 py-3">
+                                            <center class="description_video">
+                                                <h4 class="color-dark-purple text-center">
+                                                    ដាក់កូនៗចូលរៀននៅសាលាណាមួយ ដូចជាការវិនិយោគ!
+                                                </h4>
+                                                <p>
+                                                    <p>ដាក់កូនៗចូលរៀននៅសាលាណាមួយ ដូចជាការវិនិយោគ!</p>
+
+<p>ការដាក់កូនៗជាទីស្រឡាញ់របស់លោកអ្នកចូលរៀននៅសាលាណាមួយពិតជាសំខាន់ណាស់ បើដាក់ខុស នឹងមិនទទួលបានផលដូចការរំពឹងទុកនោះទេ!</p>
+
+<p>សាលារៀន អន្តរទ្វីប អាមេរិកាំង មានកម្មវិធីសិក្សាច្បាស់លាស់ និងសម្បូរបែប ចាប់ពីថ្នាក់ក្រោមមត្តេយ្យសិក្សា រហូតដល់ថ្នាក់វិទ្យាល័យ តាមបែបខ្មែរ-អាមេរិកាំង ដំបូងគេបង្អស់ក្នុងព្រះរាជាណាចក្រកម្ពុជា ស្របតាមក្រសួងអប់រំ យុវជន និងកីឡា ដោយបច្ចុប្បន្នមាន ៨សាខា ៦សាខានៅរាជធានីភ្នំពេញ និងមាន១សាខានៅខេត្តសៀមរាប រីឯ១សាខាទៀតស្ថិតនៅខេត្តតាកែវ។</p>
+
+<p>ព័ត៌មានបន្ថែមសូមទាក់ទង ០១៧ ៨៨៩ ៩០៦/០១០ ៣៥៣ ៣៣០</p>                                                </p>
+                                                <a class="btn btn-lg" target="_blank"
+                                                    href="https://www.youtube.com/watch?v=NInMt9e4mno">មើល​វីដេអូ</a>
+                                            </center>
+
+                                        </div>
+                                        <div class="col-xl-6 col-md-6" style="position: relative;">
+                                                                                        <iframe class="img-fluid rounded-2"
+                                                src="https://www.youtube.com/embed/NInMt9e4mno"
+                                                title="YouTube video player" frameborder="0"
+                                                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                                allowfullscreen style="width: 100%;height: 350px;"></iframe>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                                            </div>
+                    <button class="carousel-control-prev mx-5" type="button" data-bs-target="#homeCarouselVideo"
+                        data-bs-slide="prev">
+                        <!-- <span class="carousel-control-prev-icon" aria-hidden="true"></span> -->
+                        <i class="iconSlide fa-solid fa-chevron-left"></i>
+                        <span class="visually-hidden">Previous</span>
+                    </button>
+                    <button class="carousel-control-next mx-5" type="button" data-bs-target="#homeCarouselVideo"
+                        data-bs-slide="next">
+                        <!-- <span class="carousel-control-next-icon" aria-hidden="true"></span> -->
+                        <i class="iconSlide fa-solid fa-chevron-right"></i>
+                        <span class="visually-hidden">Next</span>
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Article -->
+    <section class="featureExploreOurSchool feature">
+        <div class="container-xl mt-5">
+            <div class="row justify-content-center wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="col-lg-8 col-md-10 col-sm-12 text-center">
+                    <h4 class="text-center fw-bold mb-5 color-dark-purple">
+                        ស្វែងយល់បន្ថែមសាលារបស់ពួកយើង </h4>
+                </div>
+            </div>
+            <div class="row">
+                <div class='col-md-6 col-sm-12 wow animated fadeIn' data-wow-duration='1s' data-wow-delay='0.5s' style='padding:20px'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='card h-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class='a_backg' href='https://www.sr.ais.edu.kh/articles/students-experiment'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img class='img_exp_school card-img img-overlay' src=https://sr.ais.edu.kh/storage/photos/QI5A0023-min.jpg alt='QI5A0023-min.jpg'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card-title-overlay'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h4>សិស្សធ្វើការពិសោធន៍</h4>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div><div class='col-md-6 col-sm-12 wow animated fadeIn' data-wow-duration='1s' data-wow-delay='0.5s' style='padding:20px'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='card h-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class='a_backg' href='https://www.sr.ais.edu.kh/articles/sport'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img class='img_exp_school card-img img-overlay' src=http://sr.ais.edu.kh/storage/photos/AllRoom/IMG_6642.jpg alt='IMG_6642.jpg'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card-title-overlay'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h4>កីឡា</h4>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div><div class='col-md-6 col-sm-12 wow animated fadeIn' data-wow-duration='1s' data-wow-delay='0.5s' style='padding:20px'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='card h-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class='a_backg' href='https://www.sr.ais.edu.kh/articles/life-skills'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img class='img_exp_school card-img img-overlay' src=http://sr.ais.edu.kh/storage/photos/AllRoom/03.jpg alt='03.jpg'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card-title-overlay'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h4>បំណិនជីវិត</h4>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div><div class='col-md-6 col-sm-12 wow animated fadeIn' data-wow-duration='1s' data-wow-delay='0.5s' style='padding:20px'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='card h-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <a class='a_backg' href='https://www.sr.ais.edu.kh/articles/arts-and-other-activities'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <img class='img_exp_school card-img img-overlay' src=http://sr.ais.edu.kh/storage/photos/AllRoom/IMG_0497.JPG.jpg alt='IMG_0497.JPG.jpg'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card-title-overlay'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <h4>សិល្បៈ និងសកម្មភាពផ្សេងៗ</h4>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </a>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>            </div>
+        </div>
+    </section>
+
+    <!-- Events -->
+    <section class="events">
+        <div class="container-xl my-5">
+            <div class="row justify-content-center wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+                <div class="col-lg-8 col-md-10 col-sm-12 text-center">
+                    <h3 class='fw-bold mb-5 color-dark-purple'>ព្រឹត្តិការណ៍សាលានឹងកើតឡើង</h3>                </div>
+            </div>
+            <div class="row pt-2 wow animated fadeIn" data-wow-duration="1s" data-wow-delay="0.5s">
+
+                <div class="owl-carousel owl-theme">
+                    <div class='item mb-3 w-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card card-no-img border-0'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class='card-body-event card-body'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='date'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class='fa-solid fa-calendar-days'></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span>ថ្ងៃទី១-៩ ធ្នូ ២០២៣</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p class='event-title'>ពិធីស្តាប់ព្រះសង្ឈសម្តែងព្រះធម្មទេសនា</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div><div class='item mb-3 w-100'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    <div class='card card-no-img border-0'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        <div class='card-body-event card-body'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <div class='date'>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <i class='fa-solid fa-calendar-days'></i>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                <span>ថ្ងៃទី៤-៨ ធ្នូ ២០២៣</span>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                            <p class='event-title'>ប្រឡងប្រចាំខែធ្នូ ថ្នាក់ក្រោមមេត្តយ្យសិក្សា ដល់ថ្នាក់ទី៦</p>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                        </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                    </div>
+                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                                </div>                </div>
+            </div>
+            <!-- <a href="about us/events.html" class="btn btn-dark-purple mt-3">More</a> -->
+        </div>
+    </section>
+
+    
+    <div class="popup" id="popup">
+                <div class="overlay"></div>
+        <div class="popup_content">
+            <a href="">
+                <img src="http://sr.ais.edu.kh/storage/photos/pop up/Banner_SR_2024.jpg" alt="Banner_SR_2024.jpg">
+            </a>
+
+            <div class="close_btn" onclick="closePopup()">&times;</div>
+        </div>
+    </div>
+    <input type="hidden" id="popupValue" value="{&quot;id&quot;:1,&quot;image&quot;:&quot;http:\/\/sr.ais.edu.kh\/storage\/photos\/pop up\/Banner_SR_2024.jpg&quot;,&quot;url&quot;:null,&quot;active&quot;:&quot;1&quot;,&quot;state&quot;:&quot;1&quot;,&quot;created_at&quot;:&quot;2022-10-14T04:34:48.000000Z&quot;,&quot;updated_at&quot;:&quot;2023-07-06T10:02:29.000000Z&quot;}">
+    <script>
+        //Popup When Reload Page
+        window.onload = function() {
+            let popup = $('#popupValue').val();
+            if (popup) {
+                setTimeout(function() {
+                    $("#popup").addClass("active");
+                }, 10)
+            }
+        }
+
+        function closePopup() {
+            $("#popup").removeClass("active");
+        }
+    </script>
+    
+
+    <footer>
+    <!-- Back to top button -->
+    <a id="backToTopBtn">
+        <i class="fa-solid fa-angle-up"></i>
+    </a>
+    <div class="container-fluid bg-color-dark-purple">
+        <div class="container-xl pt-5">
+            <div class="row">
+
+                <div class="col-lg-4 col-md-4">
+                    <ul style="display: grid;">
+                        
+                        <img src="https://www.sr.ais.edu.kh/FrontEnd/Image/Ais Logo/AIS Logo_Final-20.png"
+                            alt="AIS Logo_Final-21.png" style="width: 100%;"><br>
+                        <ul><li><i style='font-size:15px' class='fas'>&#xf3c5;</i>     សាលារៀន​ អន្តរទ្វីប​ អាមេរិកាំង​ មានកម្ម​វិធី​សិក្សា​ច្បាស់លាស់​ និង​សម្បូរ​បែប​ចាប់ពី​ថ្នាក់ក្រោម​មត្តេយ្យ​សិក្សា​ រហូតដល់​ថ្នាក់​វិទ្យាល័យ​ តាម​បែប​ខ្មែរ​-អាមេរិកាំង​ ដំបូង​គេ​បង្អស់​នៅក្នុង​ព្រះរាជាណាចក្រ​កម្ពុជា​។</li></ul><ul><li><i style="font-size:15px" class="fa">&#xf095;</i> +855 17 889 906</li></ul><ul><li><i style="font-size:15px" class="fa">&#xf095;</i> +855 10 353 330</li></ul><ul><li><i style="font-size:15px" class="fa">&#xf0e0;</i> info@ais.edu.kh</li></ul><ul><li><i style="font-size:15px" class="fa">&#xf0e0;</i> www.ais.edu.kh</li></ul><ul><li><i style="font-size:15px" class="fa">&#xf0e0;</i> sr.ais.edu.kh</li></ul>                    </ul>
+                </div>
+                
+                <div class='col-lg-6 col-md-6 quickLinkFooter'> <ul><li class='nav-item dropdown'> <lable class='dropdown-item'style='color:#fff'> តំណភ្ជាប់រហ័ស</lable><ul><li class='nav-item '> <a class='' href='https://www.sr.ais.edu.kh/document-for-register'> ឯកសារសម្រាប់ការចុះឈ្មោះ</a></li><li class='nav-item '> <a class='' href='https://www.sr.ais.edu.kh/tuition-fee'> ថ្លៃ​សិក្សា</a></li><li class='nav-item dropdown'> <a class='dropdown-item' target='_blank'> សាខាផ្សេងៗ</a><ul><li class='nav-item '> <a class='' target='_blank' href='https://www.aismtt.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាម៉ៅសេទុង</a></li><li class='nav-item '> <a class='' target='_blank' href='https://www.aistk.edu.kh/en/'> សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាទួលគោក</a></li><li class='nav-item '> <a class='' target='_blank' href='https://www.aisca.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកំាង សាខាចាក់អង្រែ</a></li><li class='nav-item '> <a class='' target='_blank' href='https://www.aiscc.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាចោមចៅ</a></li><li class='nav-item '> <a class='' target='_blank' href='https://www.aispt.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកំាង សាខាផ្សារថ្មី</a></li><li class='nav-item '> <a class='' target='_blank' href='https://www.aisccv.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកំាង សាខាជ្រោយចង្វារ</a></li><li class='nav-item '> <a class='' target='_blank' href='https://tak.ais.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកំាង សាខាតាកែវ</a></li><li class='nav-item '> <a class='' target='_blank' href='https://ss.ais.edu.kh/kh'> សាលារៀន​ អន្តរទ្វីប អាមេរិកាំង សាខាសែនសុខ</a></li><li class='nav-item '> <a class='' target='_blank' href='https://cap.ais.edu.kh/'> សាលារៀន អន្តរទ្វីប អាមេរិកាំង សាខាច្បារអំពៅ</a></li></ul></li></ul></li></ul></div>                <div class="col-lg-2 col-md-2 visitorFooter">
+
+                    <ul><li class='nav-item dropdown'><label class='dropdown-item'style='color:#fff'>អ្នកទស្សនា</label></li></ul>                    <ul>
+                        <li>
+
+                            <i class="fa-solid fa-user"></i>
+                            ទស្សនាថ្ងៃនេះ
+                            <strong>162</strong>
+                        </li>
+                        <li>
+
+                            <i class="fa-solid fa-user"></i>
+                            ទស្សនាម្សិលមិញ
+                            <strong>369</strong>
+                        </li>
+                        <li>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+                            ទស្សនាខែ​នេះ
+                            <strong>531</strong>
+                        </li>
+                        <li>
+
+                            <i class="fa-solid fa-calendar-days"></i>
+                            ទស្សនាឆ្នាំ​នេះ
+                            <strong>38550</strong>
+                        </li>
+                        <li>
+
+                            <i
+                                class="fa-solid fa-calendar-days"></i>ទស្សនាសរុប
+                            <strong>40515</strong>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div class="container-fluid bg-white">
+        <div class="container-xl">
+            <div class="row col-md-12 col-sm-12">
+                <div class="col-md-6 col-sm-12 copy-right py-3">
+                    
+                    <p class='d-table-cell'>© ២០២២ រក្សា​សិទ្ធិ​ដោយ សាលារៀន អន្តរទ្វីប អាមេរិកាំង</p>                </div>
+                <div class="col-md-6 col-sm-12 copy-right py-3">
+                    <ul>
+                        <ul class="icon-group">
+                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                                                                <li><a href="https://www.facebook.com/ais.mjqeducation"
+                                            target="_blank"><i class="fa-brands fa-facebook"></i></a></li>
+                                
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                                                    <li><a href="https://twitter.com/ais_mjqe"
+                                            target="_blank"><svg xmlns="http://www.w3.org/2000/svg" height="1em"
+                                                viewBox="0 0 512 512"><!--! Font Awesome Free 6.4.2 by @fontawesome  - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2023 Fonticons, Inc. -->
+                                                <path
+                                                    d="M389.2 48h70.6L305.6 224.2 487 464H345L233.7 318.6 106.5 464H35.8L200.7 275.5 26.8 48H172.4L272.9 180.9 389.2 48zM364.4 421.8h39.1L151.1 88h-42L364.4 421.8z" />
+                                            </svg></a></li>
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                                                    <li><a href="https://www.youtube.com/c/Americaninterconschool"
+                                            target="_blank"><i class="fa-brands fa-youtube"></i></a></li>
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                                                    <li><a href="https://www.linkedin.com/authwall?trk=bf&amp;trkInfo=AQE7F4cOVK39tgAAAYRlZpcIkdy24v0amCMVmzVRYSaVBAW2BxGWSYvXhaSerVT19ZE_M3pB3ERKqB-qHQ7G8YUhyAgpN8jlg6HuZ10awKPbHIUQnYnerqtzyK3cKFdh52VuQSs=&amp;original_referer=&amp;sessionRedirect=https%3A%2F%2Fwww.linkedin.com%2Fcompany%2F79727164%2Fadmin%2F"
+                                            target="_blank"><i class="fa-brands fa-linkedin"></i></a></li>
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                                                    <li><a href="https://www.tiktok.com/@americaninterconschool"
+                                            target="_blank"><i class="fa-brands fa-tiktok"></i></a></li>
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                                                    <li><a href="https://www.instagram.com/americaninterconschool/"
+                                            target="_blank"><i class="fa-brands fa-instagram"></i></a></li>
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                    <li><a href="https://t.me/AmericanInterconSchool"
+                                            target="_blank"><i class="fa-brands fa-telegram"></i></a></li>
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                            
+                                
+                                
+                                
+                                
+                                
+                                                                                    </ul>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+    <!-- JQuery -->
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/jquery-3.6.0.js" crossorigin="anonymous"></script>
+    <!-- Owl Carousel -->
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/owl carousel/owl.carousel.min.js"></script>
+    <!-- Magnific Popup -->
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/magnific-popup/jquery.magnific-popup.min.js"></script>
+    <!-- Wow js -->
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/wow-js/wow.min.js"></script>
+    <!-- Custom js -->
+    <script src="https://www.sr.ais.edu.kh/FrontEnd/Js/script.js"></script>
+    </body>
+
+</html>
